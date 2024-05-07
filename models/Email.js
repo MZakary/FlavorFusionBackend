@@ -4,16 +4,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 5173;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
-
-// MongoDB connection setup
-// Replace the MongoDB connection code with your actual connection setup
-
-// Define your MongoDB schema and model if needed
 
 // Route to handle form submissions
 app.post("/submit-form", async (req, res) => {
